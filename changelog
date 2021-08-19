@@ -1,0 +1,23 @@
+Rev 8.9.0.0.87 / 88 
+		- [PSIRT] related fixes : https://www.ti.com/lit/an/swra710a/swra710a.pdf
+    
+Rev 8.9.0.0.86
+                -APUT / BT coex : Unstable AP & BT connection ( when both roles are enabled ) . Issue fixed by adjusting WiFi firmware adaptivity code
+
+Rev 8.9.0.0.85 
+               - Upgrade to PHY FW 245 (WiLink8 AP DFS - new certification False Alarm bug fix)
+
+Rev 8.9.0.0.84
+               - Add detection mechanism for CCA. When CCA seems stuck for 1 second period, re-calibration is triggered. This mechanism is operational in 5GHz Antenna Diversity.
+               - Restrict antenna switching during calibration phase (mainly from Antenna Diversity block which is not protected).
+               - Include PHY FW version 8.2.0.0.244_DFS_new_TELEC_certification
+
+Rev 8.9.0.0.83
+               - Remove debug assert
+	       - Fix  (AP)  -  group traffic failed with mixed mode security WPA/WPA2 (fix TKIP broadcast packet)
+               - Fix  (Mesh) - Fail to establish connection with SAE key management
+               - Fix QoS issue with multicast secure mesh 
+
+Rev 8.9.0.0.82
+               - Add support for WPA3
+
