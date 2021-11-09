@@ -1,3 +1,8 @@
+Rev 8.9.0.0.89
+		- Integrated 105C temp support for WiLink8 COB designs
+		( IMPORTANT : All WiLink8 based designs (modules or COB) using this firmware version or later, need to re-run
+		configure-device.sh script using updated INI files. Please update repository https://git.ti.com/git/wilink8-wlan/18xx-ti-utils.git )
+
 Rev 8.9.0.0.87 / 88 
 		- [PSIRT] related fixes : https://www.ti.com/lit/an/swra710a/swra710a.pdf
     
