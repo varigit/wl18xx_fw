@@ -1,3 +1,8 @@
+Rev 8.9.0.0.90
+	[WFA KRACK fixes] Failing tests 10002, 10138, 10249 with Indigo.
+		- enable replay detection for Multicast/Broadcast frames during RX BA session
+		- SNR seems low when in very close proximity to the AP, which may result in missed RX packets
+
 Rev 8.9.0.0.89
 		- Integrated 105C temp support for WiLink8 COB designs
 		( IMPORTANT : All WiLink8 based designs (modules or COB) using this firmware version or later, need to re-run
