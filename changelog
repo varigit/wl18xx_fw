@@ -1,3 +1,16 @@
+Rev 8.9.1.0.0
+	- IMPORTANT!!! the new firmware mandates upgrading to the latest driver (bundle).
+	- updating major version number instead of incrementing minor version number.
+	  This would make a previous driver to fail initializing with 8.9.1.0.0 firmware.
+	- Fixes:
+		- PN drift observed during recovery causing long disconnection periods.
+		- [WFA] fragattack 4.7.2, when in AP role, unicast data frames are sent from the station unencrypted during 4-Way handshake
+		and should be dropped but instead a data reply is captured.
+		- [WFA] Mesh fix due to bad implementation of previous WFA fix. AMSDU is detected incorrectly due to address4 introduction in MPDU header which
+		may cause valid data frames to get dropped.
+		- High retransmission rate and general slowdown due to false BA session bitmap when QoS NULL data and QoS data on Best Effort queue 
+		are used together on RX direction. 
+
 Rev 8.9.0.0.90
 	[WFA KRACK fixes] Failing tests 10002, 10138, 10249 with Indigo.
 		- enable replay detection for Multicast/Broadcast frames during RX BA session
