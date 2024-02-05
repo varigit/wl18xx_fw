@@ -1,3 +1,8 @@
+Rev 8.9.1.0.2
+	- Add support for PMF/WPA3 in AP role.
+Rev 8.9.1.0.1
+	- Fix a failure in adaptivity test (ETSI EN 301 893) when in AP role.
+	- Fix connectivity latency issues that are followed by recovery.
 Rev 8.9.1.0.0
 	- IMPORTANT!!! the new firmware mandates upgrading to the latest driver (bundle).
 	- updating major version number instead of incrementing minor version number.
