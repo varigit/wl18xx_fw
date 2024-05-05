@@ -1,3 +1,5 @@
+Rev 8.9.1.0.2_fips
+	- add FIPS support
 Rev 8.9.1.0.2
 	- Add support for PMF/WPA3 in AP role.
 Rev 8.9.1.0.1
