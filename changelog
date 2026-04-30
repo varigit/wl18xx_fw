@@ -1,3 +1,8 @@
+Rev 8.9.1.0.3
+	- fix a FW crash at IntMemBlockErr(). It is triggered only in management frames transmission case.
+		- long management frames include RRM report for example. It is highly advised to lower the threshold
+		for management frames fragmentation from 2304 to 1500. The define is IEEE80211_MAX_MMPDU_SIZE.
+	- filter out frames with decryption error in FW so those are not transferred to the host.
 Rev 8.9.1.0.2
 	- Add support for PMF/WPA3 in AP role.
 Rev 8.9.1.0.1
